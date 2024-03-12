@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "barux-portfolio": {
+    "iambaru-portfolio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/barux-portfolio",
+            "outputPath": "dist/iambaru-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "barux-portfolio:build:production"
+              "buildTarget": "iambaru-portfolio:build:production"
             },
             "development": {
-              "buildTarget": "barux-portfolio:build:development"
+              "buildTarget": "iambaru-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "barux-portfolio:build"
+            "buildTarget": "iambaru-portfolio:build"
           }
         },
         "test": {
