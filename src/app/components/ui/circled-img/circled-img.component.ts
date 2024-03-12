@@ -10,21 +10,25 @@ import {
   selector: 'circled-img',
   standalone: true,
   imports: [CommonModule, NgOptimizedImage],
-  template: `<img
-    [ngSrc]="src()"
-    [alt]="alt()"
-    [width]="size()"
-    [height]="size()"
-    [ngStyle]="style()"
-    loading="lazy"
-  />`,
+  template: `
+    <div [ngStyle]="style()">
+      <img
+        [ngSrc]="src()"
+        [alt]="alt()"
+        loading="lazy"
+        fill
+      />
+    </div>
+  `,
   styles: [
     `
       :host {
         display: flex;
         height: min-content;
       }
-
+      div {
+        position: relative;
+      }
       img {
         border-radius: 50%;
         object-fit: cover;

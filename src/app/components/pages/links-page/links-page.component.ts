@@ -15,13 +15,25 @@ type Info = { name: string; description: string; icon: string };
 })
 export class LinksPageComponent {
   links = signal<Link[]>([
-    { name: 'Github', url: '/', icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg' },
-    { name: 'LinkedIn', url: '/', icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg' },
-    { name: 'Portafolio', url: '/', icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg' },
+    {
+      name: 'Github',
+      url: 'https://github.com/DerAlanBaruch',
+      icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg',
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/alan-baruch',
+      icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg',
+    },
+    {
+      name: 'Portafolio',
+      url: '/',
+      icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg',
+    },
   ]);
   info = signal<Info>({
     name: 'I Am Baru',
-    description: 'I am a web developer based on México',
+    description: 'I am a web developer based on México, I love to build things.',
     icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg',
   });
 }
