@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(./assets/css/text.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --main-bg-color: #1b1d1f;
+  --main-text-color: #f7f8f9;
+  --main-link-color: #888e94;
+  --main-border-color: #888e94;
+  --main-border-width: 2px;
+}

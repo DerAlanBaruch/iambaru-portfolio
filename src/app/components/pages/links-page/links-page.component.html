@@ -1,0 +1,26 @@
+<div>
+  <header>
+    <circled-img
+      [src]="info().icon"
+      [alt]="info().name"
+      [size]="100"
+    ></circled-img>
+    <h1>{{ info().name }}</h1>
+    <p>{{ info().description }}</p>
+  </header>
+  <section>
+    <ul>
+      @for (link of links(); track $index) {
+      <li>
+        <circled-img
+          [src]="link.icon"
+          [alt]="link.name"
+          [size]="40"
+        ></circled-img>
+        <p>{{ link.name }}</p>
+        <a [href]="link.url" target="_blank">-></a>
+      </li>
+      }
+    </ul>
+  </section>
+</div>

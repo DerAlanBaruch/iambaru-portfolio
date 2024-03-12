@@ -1,0 +1,26 @@
+a,
+p,
+li {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-text-color);
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+a {
+  color: var(--main-link-color);
+  text-decoration: none;
+  user-select: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--main-text-color);
+}
