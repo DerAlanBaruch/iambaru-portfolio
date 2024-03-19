@@ -18,18 +18,23 @@ export class LinksPageComponent {
     {
       name: 'Github',
       url: 'https://github.com/DerAlanBaruch',
-      icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg',
+      icon: './assets/images/github.svg',
     },
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/alan-baruch',
-      icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg',
+      icon: './assets/images/linkedin.svg',
     },
     {
-      name: 'Portafolio',
+      name: 'Portfolio',
       url: '/',
-      icon: 'https://www.teorema.com.mx/wp-content/uploads/zorro-rojo.jpg',
+      icon: './assets/images/web.svg',
     },
+    {
+      name: "Curriculum (PDF)",
+      url: "https://drive.google.com/file/d/1Tc-ezioaW6bk9GBsBqBN0-CNrfAC0PBt/view?usp=drive_link",
+      icon: './assets/images/user.svg',
+    }
   ]);
   info = signal<Info>({
     name: 'I Am Baru',
